@@ -1,8 +1,8 @@
-<h1> Xilog 4g API documentation </h1>
+<h1> Xilog API documentation </h1>
 Questions? Find us at <a href=mailto:development@ovarro.com> development@ovarro.com </a>
 
-<h1> Xilog 4g Data Access </h1>
-The Xilog 4g API provides access to the raw data recorded by the Xilog logger. To use the API third parties must provide an authorization token with each request. 
+<h1> Xilog Data Access </h1>
+The Xilog API provides access to the raw data recorded by the Xilog logger. To use the API third parties must provide an authorization token with each request. At the moment this API only supports the 4G variant of Xilog.
 
 # Methods 
 - [*Logger/All*](#loggeralltoken): Returns all logger sites for the access token</li>
@@ -66,7 +66,7 @@ Returns a collection of the raw channel data for the specified Xilog 4g logger. 
   <ul>
     <li>SerialNumber: (long - required)</li>
     <ul>
-      <li>Logger Serial number as dispalyed on device</li>
+      <li>Logger Serial number as displayed on device</li>
     </ul>
     <li>StartDate: (string - yyyy-MM-dd HH:mm)</li>
     <ul>
@@ -177,7 +177,7 @@ Returns a collection of the raw data for the specified Xilog 4g logger and chann
   <ul>
     <li>SerialNumber: (long - required)</li>
     <ul>
-      <li>Logger Serial number as dispalyed on device</li>
+      <li>Logger Serial number as displayed on device</li>
     </ul>
     <li>ChannelName: (string - required)</li>
     <ul>
@@ -265,7 +265,7 @@ Returns the daily data statistics for the serial number and specified date.
   <ul>
     <li>SerialNumber: (long - required)</li>
     <ul>
-      <li>Logger Serial number as dispalyed on device</li>
+      <li>Logger Serial number as displayed on device</li>
     </ul>
     <li>StartDate: (string - yyyy-MM-dd HH:mm)</li>
     <ul>
@@ -293,7 +293,7 @@ An object containing meta data for channel:
 	minTime: dateTime,
 	maxTime: dateTime,
 	minValue: number,
-          maxValue: number,
+        maxValue: number,
 	totaliser: number
     }]
 }
