@@ -27,6 +27,7 @@ Returns array of loggers for the access token
   </ul>
 
 </ol>
+
 #### Return Value
 An array of loggers containing serial number and name.
 <pre>
@@ -43,22 +44,21 @@ https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Logger/All/000000
 Example Output:
 <pre>
 [
-	{
-		"serial":12345678,
-		"name":"12345678"
-	},
-	{
-		"serial":ABCDEFGH,
-		"name":"ABCDEFGH"
-	}
+  {
+    "serial":12345678,
+    "name":"12345678"
+  },
+  {
+    "serial":ABCDEFGH,
+    "name":"ABCDEFGH"
+  }
 ]
-
 </pre>
 
 ## Data/All/{SerialNumber}/{StartDate}/{EndDate}/{Token}
 #### Purpose
 Returns a collection of the raw channel data for the specified Xilog 4g logger. (Max 8 days)
-#### Signature<
+#### Signature
 <ol>
 <li>Endpoint : <a href="https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/"> https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/</a>
 </li>
@@ -81,8 +81,8 @@ Returns a collection of the raw channel data for the specified Xilog 4g logger. 
       <li>Access token</li>
     </ul>
   </ul>
-
 </ol>
+
 #### Return Value
 An object which contains an array of channels each containing an array of the channel data:
 <pre>
@@ -112,58 +112,56 @@ https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/12345678
 Example Output:
 <pre>
 [
-	{
-		"channelName":"Flow 1",
-      "data":[
-			{
-				"type":8,
-				"data":[
-					{
-						"timestamp":"2021-08-05T03:30:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:31:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:32:30Z",
-						"value":0
-					},
-					…
-
-{
-						"timestamp":"2021-08-05T03:38:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:39:30Z",
-						"value":0
-					}
-				]
-			}
-		]
-	},
-	{
-		"channelName":"Flow 2",
-      "data":[
-			{
-				"type":8,
-				"data":[
-					{
-						"timestamp":"2021-08-05T03:30:30Z",
-						"value":0
-					},
-					…
-					{
-						"timestamp":"2021-08-05T03:39:30Z",
-						"value":0
-					}
-				]
-			}
-		]
-	}
-
+  {
+    "channelName":"Flow 1",
+    "data":[
+      {
+        "type":8,
+        "data":[
+	  {
+	    "timestamp":"2021-08-05T03:30:30Z",
+	    "value":0
+	  },
+	  {
+	    "timestamp":"2021-08-05T03:31:30Z",
+	    "value":0
+	  },
+	  {
+	    "timestamp":"2021-08-05T03:32:30Z",
+	    "value":0
+	  },
+	  …
+          {
+	    "timestamp":"2021-08-05T03:38:30Z",
+	    "value":0
+	  },
+	  {
+	    "timestamp":"2021-08-05T03:39:30Z",
+	    "value":0
+	  }
+	]
+      }
+    ]
+  },
+  {
+    "channelName":"Flow 2",
+    "data":[
+      {
+        "type":8,
+	"data":[
+	  {
+	    "timestamp":"2021-08-05T03:30:30Z",
+ 	    "value":0 
+	  },
+	  …
+	  {
+	    "timestamp":"2021-08-05T03:39:30Z",
+	    "value":0
+	  }
+        ]
+      }
+    ]
+  }
 ]
 
 </pre>
@@ -213,6 +211,7 @@ An object which contains an array of the loggers channel data:
    }]
 }
 </pre>
+
 #### Example
 
 https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/Channel/12345678/Flow%201/2021-08-05%2003:30/2021-08-05%2003:40/00000000-0000-0000-0000-000000000000
@@ -221,37 +220,37 @@ Example Output:
 
 <pre>
 [
-	{
-		"channelName":"Flow 1",
-      "data":[
-			{
-				"type":8,
-				"data":[
-					{
-						"timestamp":"2021-08-05T03:30:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:31:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:32:30Z",
-						"value":0
-					},
-					…
-					{
-						"timestamp":"2021-08-05T03:38:30Z",
-						"value":0
-					},
-					{
-						"timestamp":"2021-08-05T03:39:30Z",
-						"value":0
-					}
-				]
-			}
-		]
-	}
+  {
+    "channelName":"Flow 1",
+    "data":[
+      {
+        "type":8,
+	"data":[
+	  {
+	    "timestamp":"2021-08-05T03:30:30Z",
+	    "value":0
+          },
+          {
+      	     "timestamp":"2021-08-05T03:31:30Z",
+             "value":0
+          },
+	  {
+	     "timestamp":"2021-08-05T03:32:30Z",
+	     "value":0
+	  },
+	  …
+	  {
+	     "timestamp":"2021-08-05T03:38:30Z",
+	     "value":0
+	  },
+	  {
+	     "timestamp":"2021-08-05T03:39:30Z",
+	     "value":0
+	  }
+        ]
+      }
+    ]
+  }
 ]
 </pre>
 
@@ -283,6 +282,7 @@ Returns the daily data statistics for the serial number and specified date.
   </ul>
 
 </ol>
+
 #### Return Value
 An object containing meta data for channel:
 <pre>
@@ -305,25 +305,25 @@ https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/DailyStats/1
 
 <pre>
 {
-	"channelName": "Flow 1",
-	"dailyStats": [
-  		{
-			"date": "2021-08-15T00:00:00Z",
-			"minTime": "2021-08-15T00:01:00",
-			"maxTime": "2021-08-15T00:00:00",
-			"minValue": 0,
-			"maxValue": 0,
-			"totaliser": 0
-		},
-  		{
-			"date": "2021-08-16T00:00:00Z",
-			"minTime": "2021-08-16T00:01:00",
-			"maxTime": "2021-08-16T00:00:00",
-			"minValue": 0,
-			"maxValue": 0,
-			"totaliser": 0
-}
-	],
+  "channelName": "Flow 1",
+  "dailyStats": [
+    {
+      "date": "2021-08-15T00:00:00Z",
+      "minTime": "2021-08-15T00:01:00",
+      "maxTime": "2021-08-15T00:00:00",
+      "minValue": 0,
+      "maxValue": 0,
+      "totaliser": 0
+    },
+    {
+      "date": "2021-08-16T00:00:00Z",
+      "minTime": "2021-08-16T00:01:00",
+      "maxTime": "2021-08-16T00:00:00",
+      "minValue": 0,
+      "maxValue": 0,
+      "totaliser": 0
+    }
+  ],
 }
 
 </pre>
