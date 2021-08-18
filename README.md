@@ -5,10 +5,10 @@ Questions? Find us at <a href=mailto:development@ovarro.com> development@ovarro.
 The Xilog API provides access to the raw data recorded by the Xilog logger. To use the API third parties must provide an authorization token with each request. At the moment this API only supports the 4G variant of Xilog.
 
 # Methods 
-- [*Logger/All*](#loggeralltoken): Returns all logger sites for the access token</li>
-- [*Data/All*](#dataallserialnumberstartdateenddatetoken): Returns all data for site and the given time span</li>
-- [*Data/Channel*](#datachannelserialnumberchannelnamestartdateenddatetoken): Returns all data for site and the given time span</li>
-- [*Data/DailyStats*](#datadailystatsserialnumberstartdateenddatetoken): Returns statistical data on each channel specified by date time range.</li>
+- [*Logger/All*](#loggeralltoken): Returns all loggers for the access token</li>
+- [*Data/All*](#dataallserialnumberstartdateenddatetoken): Returns all data for logger for the specified date range</li>
+- [*Data/Channel*](#datachannelserialnumberchannelnamestartdateenddatetoken): Returns all data for logger for the specified channel and date range</li>
+- [*Data/DailyStats*](#datadailystatsserialnumberstartdateenddatetoken): Returns statistical data on each channel for the specified date range.</li>
 
 # API
 ## Logger/All/{token}
