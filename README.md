@@ -97,9 +97,9 @@ An object which contains an array of channels each containing an array of the ch
    }]
 }]
 </pre>
-Where LogType = 
+LogTypes:
 <ul>
-<li> Average = 8 </li>
+<li> Main = 8 </li>
 <li> Min = 4 </li>
 <li> Max = 2 </li>
 <li> Standard Deviation = 1 </li> 
