@@ -46,11 +46,11 @@ Example Output:
 [
   {
     "serial":12345678,
-    "name":"12345678"
+    "name":"ABCDEFGH"
   },
   {
-    "serial":ABCDEFGH,
-    "name":"ABCDEFGH"
+    "serial":87654321,
+    "name":"HGFEDCBA"
   }
 ]
 </pre>
