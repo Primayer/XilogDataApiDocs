@@ -16,7 +16,7 @@ The Xilog API provides access to the raw data recorded by the Xilog logger. To u
 Returns array of loggers for the access token
 #### Signature
 <ol>
-<li>Endpoint : https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Logger/All
+<li>Endpoint : https://xilogdataapi.atriumiot.com//Logger/All
 </li>
 <li> Params </li>
   <ul>
@@ -39,7 +39,7 @@ An array of loggers containing serial number and name.
 
 #### Example
 
-https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Logger/All/00000000-0000-0000-0000-000000000000
+https://xilogdataapi.atriumiot.com/Logger/All/00000000-0000-0000-0000-000000000000
 
 Example Output:
 <pre>
@@ -60,7 +60,7 @@ Example Output:
 Returns a collection of the raw channel data for the specified Xilog 4g logger. (Max 8 days)
 #### Signature
 <ol>
-<li>Endpoint : <a href="https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/"> https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/</a>
+<li>Endpoint : <a href="https://axilogdataapi.atriumiot.com/Data/All/"> https://xilogdataapi.atriumiot.com/Data/All/</a>
 </li>
 <li> Params </li>
   <ul>
@@ -107,7 +107,7 @@ LogTypes:
 
 #### Example
 
-https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/All/12345678/2021-08-05%2003:30/2021-08-05%2003:40/00000000-0000-0000-0000-000000000000
+https://xilogdataapi.atriumiot.com/Data/All/12345678/2021-08-05%2003:30/2021-08-05%2003:40/00000000-0000-0000-0000-000000000000
 
 Example Output:
 <pre>
@@ -171,7 +171,7 @@ Example Output:
 Returns a collection of the raw data for the specified Xilog 4g logger and channel name. (Max 8 days)
 #### Signature
 <ol>
-<li>Endpoint : <a href=" https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/Channel/">https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/Channel/</a>
+<li>Endpoint : <a href=" https://xilogdataapi.atriumiot.com/Data/Channel/">https://xilogdataapi.atriumiot.com/Data/Channel/</a>
 </li>
 <li> Params </li>
   <ul>
@@ -214,7 +214,7 @@ An object which contains an array of the loggers channel data:
 
 #### Example
 
-https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/Channel/12345678/Flow%201/2021-08-05%2003:30/2021-08-05%2003:40/00000000-0000-0000-0000-000000000000
+https://xilogdataapi.atriumiot.com/Data/Channel/12345678/Flow%201/2021-08-05%2003:30/2021-08-05%2003:40/00000000-0000-0000-0000-000000000000
 
 Example Output:
 
@@ -259,7 +259,7 @@ Example Output:
 Returns the daily data statistics for the serial number and specified date. 
 #### Signature
 <ol>
-<li>Endpoint : <a href=" https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/DailiyStats/">  https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/DailiyStats/</a>
+<li>Endpoint : <a href=" https://xilogdataapi.atriumiot.com/Data/DailiyStats/">  https://xilogdataapi.atriumiot.com/Data/DailiyStats/</a>
 </li>
 <li> Params </li>
   <ul>
@@ -301,7 +301,7 @@ An object containing meta data for channel:
 </pre>
 #### Example
 
-https://app-loggervision-logger-prod-uks-001.azurewebsites.net/Data/DailyStats/12345678/2021-08-15/2021-08-16/00000000-0000-0000-0000-000000000000
+https://xilogdataapi.atriumiot.com/Data/DailyStats/12345678/2021-08-15/2021-08-16/00000000-0000-0000-0000-000000000000
 
 <pre>
 {
