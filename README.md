@@ -15,8 +15,8 @@ The Xilog API provides access to the raw data recorded by the Xilog logger. To u
 - [*PlusLogger/All*](#plusloggeralltoken): Returns all loggers for the access token</li>
 - [*PlusData*](#plusdataserialnumberchannelstartdateenddatetoken): Returns all data for logger channel for the specified date range</li>
 - [*PlusData/ToUnits*](#plusdatatounitsserialnumberchannelstartdateenddateunittoken):Returns all data for logger channel for the specified date range, converted to a unit</li>
-- [*Data/Meter*](#datameterserialnumberchannelstartdateenddatetoken): Returns meter data for a channel for the specified date range.</li>
-- [*Data/MinMax*](#dataminmaxserialnumberchannelstartdateenddatetoken): Returns statistical data on each channel for the specified date range.</li>
+- [*PlusData/Meter*](#datameterserialnumberchannelstartdateenddatetoken): Returns meter data for a channel for the specified date range.</li>
+- [*PlusData/MinMax*](#dataminmaxserialnumberchannelstartdateenddatetoken): Returns statistical data on each channel for the specified date range.</li>
 # API
 ## Logger/All/{token}
 #### Purpose
