@@ -442,12 +442,23 @@ Returns the channel data for the specified Xilog+ logger. (Max 8 days)
 </ol>
 
 #### Return Value
-An array of the channel data:
+Channel object with an array of the channel data:
 <pre>
-[{
-    timestamp: string,
-    value: number
-}]
+{
+  channel: {
+    index: string,
+    readingType: string,
+    dataType: int,
+    UnitType: int
+  },
+  data: [
+    {
+      timestamp: string,
+      value: number
+    }
+  ]
+}
+
 </pre>
 
 #### Example
@@ -456,29 +467,38 @@ https://xilogdataapi.atriumiot.com/PlusData/12345678/d1a/2021-08-05%2003:30/2021
 
 Example Output:
 <pre>
-[
-
-	{
-	  "timestamp":"2021-08-05 03:30:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:31:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:32:30",
-	  "value":0
-	},
+{
+  "channel": {
     {
-	  "timestamp":"2021-08-05 03:38:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:39:30",
-	  "value":0
-	}
-]
+      "index": "d1a",
+      "readingtype": "Average",
+      "dataType": 1,
+      "unitType": 8
+    }
+  },
+  "data": [
+    {
+      "timestamp":"2021-08-05 03:30:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:31:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:32:30",
+      "value":0
+    },
+      {
+      "timestamp":"2021-08-05 03:38:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:39:30",
+      "value":0
+    }
+  ]
+}
 
 </pre>
 
@@ -519,12 +539,22 @@ Returns the channel data for the specified Xilog+ logger, converted to a unit. (
 </ol>
 
 #### Return Value
-An array of the channel data:
+Channel object with an array of the channel data:
 <pre>
-[{
-    timestamp: string,
-    value: number
-}]
+{
+  channel: {
+    index: string,
+    readingType: string,
+    dataType: int,
+    UnitType: int
+  },
+  data: [
+    {
+      timestamp: string,
+      value: number
+    }
+  ]
+}
 </pre>
 
 #### Example
@@ -533,29 +563,38 @@ https://xilogdataapi.atriumiot.com/PlusData/ToUnits/12345678/d1a/2021-08-05%2003
 
 Example Output:
 <pre>
-[
-
-	{
-	  "timestamp":"2021-08-05 03:30:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:31:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:32:30",
-	  "value":0
-	},
+{
+  "channel": {
     {
-	  "timestamp":"2021-08-05 03:38:30",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-05 03:39:30",
-	  "value":0
-	}
-]
+      "index": "d1a",
+      "readingtype": "Average",
+      "dataType": 1,
+      "unitType": 8
+    }
+  },
+  "data": [
+    {
+      "timestamp":"2021-08-05 03:30:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:31:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:32:30",
+      "value":0
+    },
+      {
+      "timestamp":"2021-08-05 03:38:30",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-05 03:39:30",
+      "value":0
+    }
+  ]
+}
 
 </pre>
 
@@ -592,12 +631,22 @@ Returns the meter channel data for the specified Xilog+ logger. (Max 8 days)
 </ol>
 
 #### Return Value
-An array of the channel data:
+Channel object with an array of the channel data:
 <pre>
-[{
-    timestamp: string,
-    value: number
-}]
+{
+  channel: {
+    index: string,
+    readingType: string,
+    dataType: int,
+    UnitType: int
+  },
+  data: [
+    {
+      timestamp: string,
+      value: number
+    }
+  ]
+}
 </pre>
 
 #### Example
@@ -606,29 +655,34 @@ https://xilogdataapi.atriumiot.com/PlusData/Meter/12345678/d1a/2021-08-05/2021-0
 
 Example Output:
 <pre>
-[
-
-	{
-	  "timestamp":"2021-08-05 00:00:00",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-06 00:00:00",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-07 00:00:00",
-	  "value":0
-	},
+{
+  "channel": {
     {
-	  "timestamp":"2021-08-08 00:00:00",
-	  "value":0
-	},
-	{
-	  "timestamp":"2021-08-09 00:00:00",
-	  "value":0
-	}
-]
+      "index": "d1a",
+      "readingtype": "Total",
+      "dataType": 1,
+      "unitType": 8
+    }
+  },
+  "data": [
+    {
+      "timestamp":"2021-08-05 00:00:00",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-06 00:00:00",
+      "value":0
+    },
+    {
+      "timestamp":"2021-08-07 00:00:00",
+      "value":0
+    },
+      {
+      "timestamp":"2021-08-08 00:00:00",
+      "value":0
+    }
+  ]
+}
 
 </pre>
 
@@ -665,12 +719,22 @@ Returns the min and max channel data for the specified Xilog+ logger. (Max 8 day
 </ol>
 
 #### Return Value
-An array of the channel data:
+Channel object with the min and max data:
 <pre>
-[{
-    timestamp: string,
-    value: number
-}]
+{
+  channel: {
+    index: string,
+    readingType: string,
+    dataType: int,
+    UnitType: int
+  },
+  data: [
+    {
+      timestamp: string,
+      value: number
+    }
+  ]
+}
 </pre>
 
 #### Example
@@ -679,21 +743,30 @@ https://xilogdataapi.atriumiot.com/PlusData/MinMax/12345678/d1a/2021-08-05%2003:
 
 Example Output:
 <pre>
-[
-
-	{
-	  "timestamp":"2021-08-05 03:30:30",
-	  "value":-1
-	},
-	{
-	  "timestamp":"2021-08-07 09:15:30",
-	  "value":1
-	}
-]
+{
+  "channel": {
+    {
+      "index": "d1a",
+      "readingtype": "Average",
+      "dataType": 1,
+      "unitType": 8
+    }
+  },
+  "data": [
+    {
+      "timestamp":"2021-08-05 03:30:30",
+      "value":-1
+    },
+    {
+      "timestamp":"2021-08-07 09:15:30",
+      "value":1
+    }
+  ]
+}
 
 </pre>
 
-# DataTypes
+# Xilog+ DataTypes
 <pre>
 {
     None = 0,
@@ -718,7 +791,7 @@ Example Output:
 }
 </pre>
 
-# UnitTypes
+# Xilog+ UnitTypes
 <pre>
 {
     None = 0,
