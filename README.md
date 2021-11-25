@@ -40,7 +40,8 @@ An array of loggers containing serial number and name.
 <pre>
 [{
   serial: number,
-  name: string
+  name: string,
+  channels: [string]
 }]
 </pre>
 
@@ -53,11 +54,19 @@ Example Output:
 [
   {
     "serial":12345678,
-    "name":"ABCDEFGH"
+    "name":"ABCDEFGH",
+    "channels": [
+      "Pipe 1",
+      "Flow 1"
+    ]
   },
   {
     "serial":87654321,
-    "name":"HGFEDCBA"
+    "name":"HGFEDCBA",
+    "channels": [
+      "Pipe",
+      "Flow"
+    ]
   }
 ]
 </pre>
