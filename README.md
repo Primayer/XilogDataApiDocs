@@ -134,28 +134,27 @@ Example Output:
       {
         "type":8,
         "data":[
-	  {
-	    "timestamp":"2021-08-05 03:30:30",
-	    "value":0
-	  },
-	  {
-	    "timestamp":"2021-08-05 03:31:30",
-	    "value":0
-	  },
-	  {
-	    "timestamp":"2021-08-05 03:32:30",
-	    "value":0
-	  },
-	  …
           {
-	    "timestamp":"2021-08-05 03:38:30",
-	    "value":0
-	  },
-	  {
-	    "timestamp":"2021-08-05 03:39:30",
-	    "value":0
-	  }
-	]
+            "timestamp":"2021-08-05 03:30:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:31:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:32:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:38:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:39:30",
+            "value":0
+          }
+        ]
       }
     ]
   },
@@ -164,16 +163,15 @@ Example Output:
     "data":[
       {
         "type":8,
-	"data":[
-	  {
-	    "timestamp":"2021-08-05 03:30:30",
- 	    "value":0 
-	  },
-	  …
-	  {
-	    "timestamp":"2021-08-05 03:39:30",
-	    "value":0
-	  }
+	      "data":[
+          {
+            "timestamp":"2021-08-05 03:30:30",
+            "value":0 
+          },
+          {
+            "timestamp":"2021-08-05 03:39:30",
+            "value":0
+          }
         ]
       }
     ]
@@ -221,8 +219,8 @@ An object which contains an array of the loggers channel data:
   data: [{
      type: LogType,
      data: [{
-        timestamp: string,
-        value: number
+      timestamp: string,
+      value: number
      }]
    }]
 }
@@ -241,28 +239,27 @@ Example Output:
     "data":[
       {
         "type":8,
-	"data":[
-	  {
-	    "timestamp":"2021-08-05 03:30:30",
-	    "value":0
+	      "data":[
+	        {
+            "timestamp":"2021-08-05 03:30:30",
+            "value":0
           },
           {
-      	     "timestamp":"2021-08-05 03:31:30",
-             "value":0
+            "timestamp":"2021-08-05 03:31:30",
+            "value":0
           },
-	  {
-	     "timestamp":"2021-08-05 03:32:30",
-	     "value":0
-	  },
-	  …
-	  {
-	     "timestamp":"2021-08-05 03:38:30",
-	     "value":0
-	  },
-	  {
-	     "timestamp":"2021-08-05 03:39:30",
-	     "value":0
-	  }
+          {
+            "timestamp":"2021-08-05 03:32:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:38:30",
+            "value":0
+          },
+          {
+            "timestamp":"2021-08-05 03:39:30",
+            "value":0
+          }
         ]
       }
     ]
@@ -303,15 +300,15 @@ Returns the daily data statistics for the serial number and specified date.
 An object containing meta data for channel:
 <pre>
 {
-   channelName: string,
-   dailyStats: [{
+  channelName: string,
+  dailyStats: [{
     date: datetime,
-	minTime: dateTime,
-	maxTime: dateTime,
-	minValue: number,
+    minTime: dateTime,
+    maxTime: dateTime,
+    minValue: number,
     maxValue: number,
-	totaliser: number
-   }]
+    totaliser: number
+  }]
 }
 
 </pre>
@@ -368,12 +365,12 @@ An array of loggers containing serial number and name.
   serial: number,
   name: string,
   channels: [
-      {
-          index: string,
-          readingType: string,
-          dataType: int,
-          UnitType: int
-      }
+    {
+      index: string,
+      readingType: string,
+      dataType: int,
+      UnitType: int
+    }
   ]
 }]
 </pre>
@@ -389,30 +386,30 @@ Example Output:
     "serial":12345678,
     "name":"ABCDEFGH",
     "channels": [
-        {
-            "index": "d1a",
-            "readingtype": "Average",
-            "dataType": 1,
-            "unitType": 8
-        }
+      {
+        "index": "d1a",
+        "readingtype": "Average",
+        "dataType": 1,
+        "unitType": 8
+      }
     ]
   },
   {
     "serial":12345678,
     "name":"ABCDEFGH",
     "channels": [
-        {
-            "index": "d1a",
-            "readingtype": "Average",
-            "dataType": 1,
-            "unitType": 8
-        },
-        {
-            "index": "a1",
-            "readingtype": "Average",
-            "dataType": 2,
-            "unitType": 4
-        }
+      {
+        "index": "d1a",
+        "readingtype": "Average",
+        "dataType": 1,
+        "unitType": 8
+      },
+      {
+        "index": "a1",
+        "readingtype": "Average",
+        "dataType": 2,
+        "unitType": 4
+      }
     ]
   },
 ]
@@ -686,7 +683,7 @@ Example Output:
       "timestamp":"2021-08-07 00:00:00",
       "value":0
     },
-      {
+    {
       "timestamp":"2021-08-08 00:00:00",
       "value":0
     }
@@ -778,91 +775,91 @@ Example Output:
 # Xilog+ DataTypes
 <pre>
 {
-    None = 0,
-    Flow = 1,
-    Pressure = 2,
-    Depth = 3,
-    Volume = 4,
-    Chlorine = 5,
-    Colour = 6,
-    Turbidity = 7,
-    Temperature = 8,
-    Rainfall = 9,
-    Conductivity = 10,
-    REDOX = 11,
-    pH = 12,
-    DissolvedOxygen = 13,
-    Height = 14,
-    ChangeOfState = 15,
-    Velocity = 16,
-    UVEnergy = 19,
-    UVIntensity = 20,
+  None = 0,
+  Flow = 1,
+  Pressure = 2,
+  Depth = 3,
+  Volume = 4,
+  Chlorine = 5,
+  Colour = 6,
+  Turbidity = 7,
+  Temperature = 8,
+  Rainfall = 9,
+  Conductivity = 10,
+  REDOX = 11,
+  pH = 12,
+  DissolvedOxygen = 13,
+  Height = 14,
+  ChangeOfState = 15,
+  Velocity = 16,
+  UVEnergy = 19,
+  UVIntensity = 20,
 }
 </pre>
 
 # Xilog+ UnitTypes
 <pre>
 {
-    None = 0,
-    LitresPerSecond = 1,
-    LitresPerHour = 2,
-    CubicMetresPerHour = 3,
-    Metres = 4,
-    Bar = 5,
-    MilliMetres = 6,
-    MilliBar = 7,
-    CubicMetres = 8,
-    Litres = 9,
-    MilliGramsPerLitre = 10,
-    Hazen = 11,
-    NTU = 12,
-    DegreesCentigrade = 13,
-    DegreesFarenheit = 14,
-    DegreesKelvin = 15,
-    MilliMetresPerHour = 16,
-    MilliMetresPerDay = 17,
-    MicroSiemens = 18,
-    MilliSiemens = 19,
-    Volts = 20,
-    CubicMetresPerSecond = 21,
-    MegaLitresPerDay = 22,
-    USGallonsPerMinute = 23,
-    USGallonsPerHour = 24,
-    USMegaGallonsPerDay = 25,
-    USGallons = 26,
-    PoundsPerSquareInch = 29,
-    Unitless = 30,
-    Centimetres = 31,
-    OnOff = 32,
-    MilliAmps = 33,
-    USGallonsPerSecond = 34,
-    USGallonsPerDay = 35,
-    CubicFeetPerSecond = 36,
-    CubicFeetPerMinute = 37,
-    CubicFeetPerHour = 38,
-    CubicFeetPerDay = 39,
-    CubicFeet = 40,
-    USMegaGallons = 41,
-    Feet = 42,
-    Inches = 43,
-    MilliMetresPerSecond = 44,
-    MetresPerSecond = 45,
-    FeetPerSecond = 46,
-    InchesPerSecond = 47,
-    LitresPerMinute = 48,
-    KilowattHour = 49,
-    Kilowatt = 50,
-    Joules = 51,
-    JoulesPerSecond = 52,
-    Watt = 53,
-    WattHour = 54,
-    MilliWattsPerCentimetreSquared = 55,
-    MilliJoulesPerCentimetreSquared = 56,
-    KilogramsPerCentimetreSquared = 57,
-    MegawattHour = 59,
-    MilliVolts = 60,
-    Kilopascals = 61,
-    Megapascals = 62,
-    Decibels = 63,
+  None = 0,
+  LitresPerSecond = 1,
+  LitresPerHour = 2,
+  CubicMetresPerHour = 3,
+  Metres = 4,
+  Bar = 5,
+  MilliMetres = 6,
+  MilliBar = 7,
+  CubicMetres = 8,
+  Litres = 9,
+  MilliGramsPerLitre = 10,
+  Hazen = 11,
+  NTU = 12,
+  DegreesCentigrade = 13,
+  DegreesFarenheit = 14,
+  DegreesKelvin = 15,
+  MilliMetresPerHour = 16,
+  MilliMetresPerDay = 17,
+  MicroSiemens = 18,
+  MilliSiemens = 19,
+  Volts = 20,
+  CubicMetresPerSecond = 21,
+  MegaLitresPerDay = 22,
+  USGallonsPerMinute = 23,
+  USGallonsPerHour = 24,
+  USMegaGallonsPerDay = 25,
+  USGallons = 26,
+  PoundsPerSquareInch = 29,
+  Unitless = 30,
+  Centimetres = 31,
+  OnOff = 32,
+  MilliAmps = 33,
+  USGallonsPerSecond = 34,
+  USGallonsPerDay = 35,
+  CubicFeetPerSecond = 36,
+  CubicFeetPerMinute = 37,
+  CubicFeetPerHour = 38,
+  CubicFeetPerDay = 39,
+  CubicFeet = 40,
+  USMegaGallons = 41,
+  Feet = 42,
+  Inches = 43,
+  MilliMetresPerSecond = 44,
+  MetresPerSecond = 45,
+  FeetPerSecond = 46,
+  InchesPerSecond = 47,
+  LitresPerMinute = 48,
+  KilowattHour = 49,
+  Kilowatt = 50,
+  Joules = 51,
+  JoulesPerSecond = 52,
+  Watt = 53,
+  WattHour = 54,
+  MilliWattsPerCentimetreSquared = 55,
+  MilliJoulesPerCentimetreSquared = 56,
+  KilogramsPerCentimetreSquared = 57,
+  MegawattHour = 59,
+  MilliVolts = 60,
+  Kilopascals = 61,
+  Megapascals = 62,
+  Decibels = 63,
 }
 </pre>
