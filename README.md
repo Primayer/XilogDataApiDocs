@@ -495,7 +495,7 @@ Example Output:
       "timestamp":"2021-08-05 03:32:30",
       "value":0
     },
-      {
+    {
       "timestamp":"2021-08-05 03:38:30",
       "value":0
     },
@@ -591,7 +591,7 @@ Example Output:
       "timestamp":"2021-08-05 03:32:30",
       "value":0
     },
-      {
+    {
       "timestamp":"2021-08-05 03:38:30",
       "value":0
     },
