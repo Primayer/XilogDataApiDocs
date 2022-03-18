@@ -5,7 +5,7 @@ Questions? Find us at <a href=mailto:development@ovarro.com> development@ovarro.
 The Xilog API provides access to the raw data recorded by the Xilog logger. To use the API third parties must provide an authorization token with each request, which can be found <a href=https://atriumiot.com/accountmanagement>here</a>.
 
 # Methods
-#### Xilog 4G
+#### Xilog NG
 - [*Logger/All*](#loggeralltoken): Returns all loggers for the access token</li>
 - [*Data/All*](#dataallserialnumberstartdateenddatetoken): Returns all data for logger for the specified date range</li>
 - [*Data/Channel*](#datachannelserialnumberchannelnamestartdateenddatetoken): Returns all data for logger for the specified channel and date range</li>
@@ -75,7 +75,7 @@ Example Output:
 
 ## Data/All/{SerialNumber}/{StartDate}/{EndDate}/{Token}
 #### Purpose
-Returns a collection of the raw channel data for the specified Xilog 4g logger. (Max 8 days)
+Returns a collection of the raw channel data for the specified Xilog NG logger. (Max 8 days)
 #### Signature
 <ol>
 <li>Endpoint : <a href="https://xilogdataapi.atriumiot.com/Data/All/"> https://xilogdataapi.atriumiot.com/Data/All/</a>
@@ -184,7 +184,7 @@ Example Output:
 
 ## Data/Channel/{SerialNumber}/{ChannelName}/{StartDate}/{EndDate}/{Token})
 #### Purpose
-Returns a collection of the raw data for the specified Xilog 4g logger and channel name. (Max 8 days)
+Returns a collection of the raw data for the specified Xilog NG logger and channel name. (Max 8 days)
 #### Signature
 <ol>
 <li>Endpoint : <a href=" https://xilogdataapi.atriumiot.com/Data/Channel/">https://xilogdataapi.atriumiot.com/Data/Channel/</a>
